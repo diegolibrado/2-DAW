@@ -5,8 +5,6 @@ Repositorio donde subo todos mis apuntes, ejercicios y prácticas de **JavaScrip
 ---
 
 ## 🌐 Prácticas Web (GitHub Pages)
-*Haz clic en el enlace principal para abrir y probar la página web interactiva directamente en el navegador:*
-
 - **[JavaScript - Examen 1 (Ejecutar web en GitHub Pages)](https://diegolibrado.github.io/2-DAW/JavaScript/Examen%201/)**
   - 📄 [`index.html`](./JavaScript/Examen%201/index.html)
   - 📜 [`01_eventos.js`](./JavaScript/Examen%201/01_eventos.js)
@@ -40,8 +38,6 @@ Repositorio donde subo todos mis apuntes, ejercicios y prácticas de **JavaScrip
 ---
 
 ## 🐍 Python
-*Apuntes y ejemplos de código ordenados por tema:*
-
 1. [01 - Características de Python](./Python/01_Caracteristicas_de_python.py)
 2. [02 - Variables, constantes, tipos y conversiones](./Python/02_Variables_constantes_tipos_y_conversiones.py)
 3. [03 - Tipos de datos complejos](./Python/03_Tipos_de_datos_complejos.py)
