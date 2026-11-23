@@ -53,3 +53,41 @@ Repositorio donde subo todos mis apuntes, ejercicios y prácticas de **JavaScrip
 13. [13 - Propagación (Raise), Contexto y assert](./Python/13_Propagacion(Raise)_Contexto(sys.exc_info_as_ex)_y_assert.py)
 14. [14 - Abrir ficheros de texto y binarios](./Python/14_Abrir_ficheros_de_texto_y_binarios.py)
 15. [15 - Control de puntero (`tell` y `seek`)](./Python/15_Control_de_puntero_tell_seek.py)
+
+<style>
+  html, body, .markdown-body {
+    background-color: #1c1e22 !important;
+    color: #f0f2f5 !important;
+  }
+
+  .markdown-body h1,
+  .markdown-body h2,
+  .markdown-body h3 {
+    color: #ffffff !important;
+    border-bottom-color: #343842 !important;
+  }
+
+  .markdown-body a {
+    color: #6cb6ff !important;
+  }
+
+  .markdown-body a:hover {
+    color: #96d0ff !important;
+    text-decoration: underline;
+  }
+
+  .markdown-body em {
+    color: #b0b6c2 !important;
+  }
+
+  .markdown-body hr {
+    background-color: #343842 !important;
+  }
+
+  .markdown-body code,
+  .markdown-body pre {
+    background-color: #272a30 !important;
+    color: #e6edf3 !important;
+    border: 1px solid #383c47 !important;
+  }
+</style>
