@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudio Completo JavaScript: UF3 y UF4</title>
+  </head>
+  <body>
+    <h1>Laboratorio de Estudio JAvaScript (UF3 y UF4)</h1>
+    <!-- 
+    -------------------------------------------
+    SECCION 1: EVENTOS (UF3.1)
+    -------------------------------------------
+
+    1. Manejador como atributo HTML: el codigo JS va dentro de onclick
+    2. Variable automatica 'this': hacer referencia al propio elemento <div>.
+    3. Manejador como funcion externa: llamamos a resaltaExterno(this).
+    4. Manejador semantico: el boton id="btn_semantico" no lleva atributo
+        onclick en le HTML, se lo asignaremos limpiamente desde JavaScript
+    -->
+
+    <h2>1. Pruebas de Eventos (UF3.1)</h2>
+
+    <input type="button" value="1. Manejador en atributo HTML" 
+            onclick="alert('Gracias por pinchar')" 
+            style="width:220px; height:50px; border:thin solid silver;">
+    <div id="contenidos"
+        onmouseover="this.style.borderColor='black';"
+        onmouseout="this.style.borderColor='silver';"
+        style="width:220px; height:50px; border:thin solid silver;">
+        2. Pasa el raton (usa 'this' en HTML)
+    </div>
+    <div
+        onmouseover="resaltaExterno(this)"
+        onmouseout="resaltaExterno(this)"
+        style="width:220px; height:50px; border:thin solid silver;">
+        3. Pasa el raton (FuncionExterna)
+    </div>
+    <div id="cajaObjetoEvent"
+        style="width:220px; height:50px; border:thin solid silver;">
+        4. Pasa el raton (Objeto Event)
+    </div>
+
+    <input type="button" id="pinchable" value="5. Boton con Manejador Semántico">
+
+    <hr>
+
+    <!-- 
+    -------------------------------------------
+    SECCION 2 Y 3: FORMULARIOS Y VALIDACION (UF3.2 y UF3.3)
+    -------------------------------------------
+
+     - El atributo onsubmit="return validacion()" ejecuta nuestra funcion JS
+     - Si validation() devuelve false, el formulario NO se envia
+     - Si devuelve true, el formulario se envia normalmente
+    -->
+
+    <h2>2 y 3. Formulario Completo y Validación (UF3.2 y UF3.3)</h2>
+
+    <form action="#" id="formulario" name="miFormulario" 
+        onsubmit="return validacion()">
+
+        <!-- Campo de texto obligatorio + eventos onfocus + onblur y onchange -->
+        <p>
+            <label for="nombre">Nombre (Obligatorio): </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+            <span id="infoFoco"></span>
+        </p>
+
+        <!-- Campo numerico para validar con isNaN() -->
+        <p>
+            <label for="edad">Edad (Numérico): </label>
+            <input type="text" name="edad" id="edad" placeholder="Ej: 22">
+        </p>
+
+        <!-- Campo DNI para validar con Expresion Regular /^\d{8}[A-Z]$/-->
+        <p>
+            <label for="dni">DNI (8 numeros y una letra mayúscula): </label>
+            <input type="text" name="dni" id="dni" placeholder="12345678A">
+        </p>
+
+        <!-- Campo Teléfono para validar con Expresion Regular  /^\d{9}$/-->
+        <p>
+            <label for="telefono">Teléfono (9 cifras): </label>
+            <input type="text" name="telefono" id="telefono" placeholder="600112233">
+        </p>
+
+        <!-- Campo Email para validar con Expresion Regular -->
+        <p>
+            <label for="email">Email: </label>
+            <input type="text" name="email" id="email" placeholder="usuario@live.uem.es">
+        </p>
+
+        <!-- Campos de Fecha (Dia, Mes, Año) para validar con new Date() -->
+        <p>
+            <label>Fecha (Dia / Mes 0-11 / Año)</label>
+            <input type="text" id="dia" name="dia" placeholder="Dia (1-31)" size="8px">
+            <input type="text" id="mes" name="mes" placeholder="Mes (0-11)" size="8px">
+            <input type="text" id="anyo" name="anyo" placeholder="Año (2026)" size="8px">
+        </p>
+
+        <!-- Lista desplegable <select> simple -->
+        <p>
+            <label for="opciones">Selecciona una opcion: </label>
+            <select name="opciones" id="opciones">
+                <option value="">-- Selecciona un valor --</option>
+                <option value="1">Primer valor</option>
+                <option value="2">Segundo valor</option>
+                <option value="3">Tercer valor</option>
+            </select>
+            
+            <button type="button" id="btnVerSelect">Ver opcion seleccionada</button>
+        </p>
+        <p>
+            <select id="cities" name="cities" multiple>
+                <option value="mad">Madrid</option>
+                <option value="bcn">Barcelona</option>
+            </select>
+            <button type="button" id="btnVerMultiple">Ver múltiples seleccionadas</button>
+        </p>
+
+        <!-- Grupo de RadioButtons -->
+        <div>
+            <input type="radio" name="lenguaje" id="javascript" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </div>
+        <div>
+            <input type="radio" name="lenguaje" id="python" value="Python">
+            <label for="python">Python</label>
+        </div>
+        <div>
+            <input type="radio" name="lenguaje" id="java" value="Java">
+            <label for="java">Java</label>
+        </div>
+        <button type="button" id="btnVerRadio">Mostrar Lenguaje Seleccionado</button>
+        <p id="outputRadio"></p>
+
+        <!-- Checkboxes y botones para marcar/desmarcar todos -->
+        <p>Condiciones (Checkbox obligatorio)</p>
+        <label for="agree">
+            <input type="checkbox" name="agree" id="agree">Acepto los terminos y condiciones.
+        </label><br>
+        <label for="newsletter">
+            <input type="checkbox" name="newsletter" id="newsletter">Deseo recibir noticias.
+        </label><br>
+        <button type="button" id="btnMarcarTodos">Seleccionar todos los CheckBox</button>
+        <button type="button" id="btnDesmarcarTodos">Deseleccionar todos los Checkbox</button>
+
+        <!-- Textarea ocn limite de caracteres mediante onkeypress -->
+        <p>
+            <label for="texto">Comentarios (Máximo 20 caracteres): </label><br>
+            <textarea id="texto" onkeypress="return limita(20)"></textarea>
+        </p>
+
+        <!-- Boton de envio normal (dispara onsubmit="return valicacion()") -->
+        <input type="submit" value="Validar y Enviar Formulario">
+
+        <!-- Boton de reinicio (dispara el evento reset) -->
+        <input type="reset" value="Limpiar formulario">
+
+        <!-- 
+        Utilidad para evitar envio duplicado:
+        
+        Se usa type:"button" en lugar de type="submit" porque si deshabilitamos
+        un boton submit antes de enviar el formulario nunca llega a enviarse.
+        -->
+        <input type="button" value="Enviar sin duplicados"
+            onclick="
+                this.disabled=true; 
+                this.value='Enviando...';
+                this.form.submit();"
+        >
+    </form>
+
+    <hr>
+
+    <!-- 
+    -------------------------------------------
+    SECCION4: JSON, AJAX Y WEB STORAGE (UF4.1)
+    -------------------------------------------
+    -->
+
+    <h2>4. JSON, AJAX (XHR y Fetch) y Storage (UF4.1)</h2>
+
+    <button type="button" id="btnProbarJSON">1. Probar JSON.parse() y JSON.stringfy()</button><br>
+    <button type="button" id="btnXHR">2. Peticion AJAX con CMLHttpRequest</button><br>
+    <button type="button" id="btnFetchGet">3. Peticion AJAX con Fetch (GET)</button><br>
+    <button type="button" id="btnFetchPost">4. Enviar datos con Fetch (POST)</button><br>
+    <button type="button" id="btnGuardarStorage">5. Guardar en LocalStorage y SessionStorage</button><br>
+    <button type="button" id="btnLeerStorage">6. Leer de LocarStorage</button><br>
+    <button type="button" id="btnBorrarStorage">7. Vaciar LocaStorage</button><br>
+
+    <hr>
+
+    <div id="resultadoAJAX" style = "background-color: lightgrey; padding: 0px; margin: 0px;">
+        Aqui se mostraran los resultados de JSON, AJAX y LocalStorage...
+    </div>
+
+    <!-- 
+    -------------------------------------------
+    CARGA DE LOS ARCHIVOS JAVASCRIPT
+    -------------------------------------------
+    -->
+    <script src="01_eventos.js"></script>
+    <script src="02_formularios.js"></script>
+    <script src="03_validaciones.js"></script>
+    <script src="04_json_ajax_storage.js"></script>
+  </body>
+</html>
