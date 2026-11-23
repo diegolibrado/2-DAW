@@ -4,8 +4,8 @@ Repositorio donde subo todos mis apuntes, ejercicios y prácticas de **JavaScrip
 
 ---
 
-## 🌐 Prácticas Web (GitHub Pages)
-- **[JavaScript - Examen 1 (Ejecutar web en GitHub Pages)](https://diegolibrado.github.io/2-DAW/JavaScript/Examen%201/)**
+## 🌐 JavaScript
+- **[JavaScript - Examen 1**
   - 📄 [`index.html`](./JavaScript/Examen%201/index.html)
   - 📜 [`01_eventos.js`](./JavaScript/Examen%201/01_eventos.js)
   - 📜 [`02_formularios.js`](./JavaScript/Examen%201/02_formularios.js)
