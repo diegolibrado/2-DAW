@@ -36,7 +36,7 @@ $password = $_POST['password'];
  */
 $stmt = $conexion->prepare("
     SELECT *
-    FROM usuarios
+    FROM USUARIOS
     WHERE email = :email
 ");
 $stmt->execute([

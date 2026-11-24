@@ -39,6 +39,22 @@ $pass = "";
 
 /**
  * -------------------------------------------
+ * CONEXIÓN AUTOMÁTICA EN SERVIDOR ONLINE (INFINITYFREE)
+ * -------------------------------------------
+ * 
+ * Si el archivo no se ejecuta en nuestro ordenador (localhost),
+ * sobrescribimos los datos con los del hosting gratuito.
+ * 
+ */
+if ($_SERVER['SERVER_NAME'] !== 'localhost' && $_SERVER['SERVER_NAME'] !== '127.0.0.1') {
+    $host = "sql209.infinityfree.com";
+    $db_name = "if0_43525543_curso_php";
+    $user = "if0_43525543";
+    $pass = "e2ARpCVUSc6WIP";
+}
+
+/**
+ * -------------------------------------------
  * MANEJO DE ERRORES MEDIANTE EXCEPCIONES
  * -------------------------------------------
  * 
@@ -84,10 +100,10 @@ try {
 
     echo "Conexion correcta.";
 /**
-* -------------------------------------------
-* CAPTURA DE ERRORES
-* -------------------------------------------
-*/
+ * -------------------------------------------
+ * CAPTURA DE ERRORES
+ * -------------------------------------------
+ */
 } catch (PDOException $e) {
     echo $e->getMessage();
 }

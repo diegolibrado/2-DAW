@@ -54,7 +54,7 @@ $password_hash = password_hash(
  * 
  */
 $stmt = $conexion->prepare("
-    INSERT INTO usuarios(
+    INSERT INTO USUARIOS(
         nombre, email, password
     )
     VALUES(
