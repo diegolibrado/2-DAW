@@ -15,24 +15,25 @@ Repositorio donde subo todos mis apuntes, ejercicios y prácticas de **JavaScrip
 ---
 
 ## 🐘 PHP (Desarrollo Web en Entorno Servidor)
-*Nota: Los scripts `.php` y `.sql` requieren XAMPP en local para ejecutarse, pero aquí puedes leer todo el código coloreado:*
+*Desplegado en vivo en servidor remoto con MySQL (además de ser compatible con XAMPP en local):*
+
 ### Curso PHP y PDO
-- [`01_conexion.php`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/01_conexion.php)
-- [`02_select.php`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/02_select.php)
-- [`03_insert.php`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/03_insert.php)
-- [`04_update.php`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/04_update.php)
-- [`05_delete.php`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/05_delete.php)
-- [`BBDD.sql`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/BBDD.sql)
+- 📄 [`01_conexion.php` (código)](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/01_conexion.php) · 🌐 [`01_conexion.php` (web)](http://diegolibrado-daw.freedev.app/PHP/CURSO_PHP/01_conexion.php)
+- 📄 [`02_select.php` (código)](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/02_select.php) · 🌐 [`02_select.php` (web)](http://diegolibrado-daw.freedev.app/PHP/CURSO_PHP/02_select.php)
+- 📄 [`03_insert.php` (código)](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/03_insert.php) · 🌐 [`03_insert.php` (web)](http://diegolibrado-daw.freedev.app/PHP/CURSO_PHP/03_insert.php)
+- 📄 [`04_update.php` (código)](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/04_update.php) · 🌐 [`04_update.php` (web)](http://diegolibrado-daw.freedev.app/PHP/CURSO_PHP/04_update.php)
+- 📄 [`05_delete.php` (código)](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/05_delete.php) · 🌐 [`05_delete.php` (web)](http://diegolibrado-daw.freedev.app/PHP/CURSO_PHP/05_delete.php)
+- 🗄️ [`BBDD.sql`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/BBDD.sql)
 
 ### Sistema de Usuarios (Login, Registro y Sesiones)
-- [`crear_tabla_usuarios.sql`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/crear_tabla_usuarios.sql)
-- [`login.html` (código)](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/login.html) · [`login.html` (web)](https://diegolibrado.github.io/2-DAW/PHP/CURSO_PHP/usuarios/login.html) — [`login.php`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/login.php)
-- [`registro.html` (código)](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/registro.html) · [`registro.html` (web)](https://diegolibrado.github.io/2-DAW/PHP/CURSO_PHP/usuarios/registro.html) — [`registro.php`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/registro.php)
-- [`panel.php`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/panel.php)
-- [`logout.php`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/logout.php)
+- 🗄️ [`crear_tabla_usuarios.sql`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/crear_tabla_usuarios.sql)
+- 📄 [`login.html` (código)](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/login.html) · 🌐 [`login.html` (web)](http://diegolibrado-daw.freedev.app/PHP/CURSO_PHP/usuarios/login.html) — [`login.php`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/login.php)
+- 📄 [`registro.html` (código)](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/registro.html) · 🌐 [`registro.html` (web)](http://diegolibrado-daw.freedev.app/PHP/CURSO_PHP/usuarios/registro.html) — [`registro.php`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/registro.php)
+- 📄 [`panel.php` (código)](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/panel.php) · 🌐 [`panel.php` (web)](http://diegolibrado-daw.freedev.app/PHP/CURSO_PHP/usuarios/panel.php)
+- 📄 [`logout.php` (código)](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/logout.php) · 🌐 [`logout.php` (web)](http://diegolibrado-daw.freedev.app/PHP/CURSO_PHP/usuarios/logout.php)
 
 ### Uso de PDO
-- [`bbdd.php`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/Uso_de_PDO/bbdd.php)
+- 📄 [`bbdd.php`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/Uso_de_PDO/bbdd.php)
 
 ---
 
