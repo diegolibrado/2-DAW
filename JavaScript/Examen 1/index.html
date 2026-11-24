@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estudio Completo JavaScript: UF3 y UF4</title>
   </head>
-  <body>
-    <h1>Laboratorio de Estudio JAvaScript (UF3 y UF4)</h1>
+  <body style="font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background-color: #f1f5f9; color: #1e293b; max-width: 960px; margin: 0 auto; padding: 32px 20px 60px 20px; line-height: 1.5;">
+    <h1 style="font-size: 28px; font-weight: 700; color: #0f172a; margin: 0 0 24px 0; padding-bottom: 12px; border-bottom: 2px solid #cbd5e1;">Laboratorio de Estudio JAvaScript (UF3 y UF4)</h1>
     <!-- 
     -------------------------------------------
     SECCION 1: EVENTOS (UF3.1)
@@ -19,31 +19,31 @@
         onclick en le HTML, se lo asignaremos limpiamente desde JavaScript
     -->
 
-    <h2>1. Pruebas de Eventos (UF3.1)</h2>
+    <h2 style="font-size: 20px; font-weight: 600; color: #1e293b; margin: 24px 0 14px 0;">1. Pruebas de Eventos (UF3.1)</h2>
 
     <input type="button" value="1. Manejador en atributo HTML" 
             onclick="alert('Gracias por pinchar')" 
-            style="width:220px; height:50px; border:thin solid silver;">
+            style="display: inline-flex; align-items: center; justify-content: center; vertical-align: top; width: 220px; height: 64px; padding: 10px; margin: 0 10px 12px 0; box-sizing: border-box; background-color: #ffffff; color: #1e293b; border: 2px solid silver; border-radius: 8px; font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);">
     <div id="contenidos"
         onmouseover="this.style.borderColor='black';"
         onmouseout="this.style.borderColor='silver';"
-        style="width:220px; height:50px; border:thin solid silver;">
+        style="display: inline-flex; align-items: center; justify-content: center; text-align: center; vertical-align: top; width: 220px; height: 64px; padding: 10px; margin: 0 10px 12px 0; box-sizing: border-box; background-color: #ffffff; color: #1e293b; border: 2px solid silver; border-radius: 8px; font-size: 13px; font-weight: 500; cursor: pointer; user-select: none; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);">
         2. Pasa el raton (usa 'this' en HTML)
     </div>
     <div
         onmouseover="resaltaExterno(this)"
         onmouseout="resaltaExterno(this)"
-        style="width:220px; height:50px; border:thin solid silver;">
+        style="display: inline-flex; align-items: center; justify-content: center; text-align: center; vertical-align: top; width: 220px; height: 64px; padding: 10px; margin: 0 10px 12px 0; box-sizing: border-box; background-color: #ffffff; color: #1e293b; border: 2px solid silver; border-radius: 8px; font-size: 13px; font-weight: 500; cursor: pointer; user-select: none; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);">
         3. Pasa el raton (FuncionExterna)
     </div>
     <div id="cajaObjetoEvent"
-        style="width:220px; height:50px; border:thin solid silver;">
+        style="display: inline-flex; align-items: center; justify-content: center; text-align: center; vertical-align: top; width: 220px; height: 64px; padding: 10px; margin: 0 10px 12px 0; box-sizing: border-box; background-color: #ffffff; color: #1e293b; border: 2px solid silver; border-radius: 8px; font-size: 13px; font-weight: 500; cursor: pointer; user-select: none; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);">
         4. Pasa el raton (Objeto Event)
     </div>
 
-    <input type="button" id="pinchable" value="5. Boton con Manejador Semántico">
+    <input type="button" id="pinchable" value="5. Boton con Manejador Semántico" style="display: inline-flex; align-items: center; justify-content: center; vertical-align: top; height: 64px; padding: 10px 18px; margin: 0 10px 12px 0; box-sizing: border-box; background-color: #2563eb; color: #ffffff; border: none; border-radius: 8px; font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer; box-shadow: 0 2px 4px rgba(37, 99, 235, 0.25);">
 
-    <hr>
+    <hr style="border: none; border-top: 1px solid #cbd5e1; margin: 28px 0;">
 
     <!-- 
     -------------------------------------------
@@ -55,108 +55,108 @@
      - Si devuelve true, el formulario se envia normalmente
     -->
 
-    <h2>2 y 3. Formulario Completo y Validación (UF3.2 y UF3.3)</h2>
+    <h2 style="font-size: 20px; font-weight: 600; color: #1e293b; margin: 0 0 16px 0;">2 y 3. Formulario Completo y Validación (UF3.2 y UF3.3)</h2>
 
     <form action="#" id="formulario" name="miFormulario" 
-        onsubmit="return validacion()">
+        onsubmit="return validacion()" style="background-color: #ffffff; padding: 24px 28px; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);">
 
         <!-- Campo de texto obligatorio + eventos onfocus + onblur y onchange -->
-        <p>
-            <label for="nombre">Nombre (Obligatorio): </label>
-            <input type="text" name="nombre" id="nombre" placeholder="Tu nombre">
-            <span id="infoFoco"></span>
+        <p style="margin: 0 0 14px 0;">
+            <label for="nombre" style="display: inline-block; min-width: 260px; font-weight: 600; font-size: 14px; color: #334155;">Nombre (Obligatorio): </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" style="padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit; font-size: 14px; width: 240px; box-sizing: border-box;">
+            <span id="infoFoco" style="margin-left: 10px; font-size: 13px; font-weight: 500; color: #2563eb;"></span>
         </p>
 
         <!-- Campo numerico para validar con isNaN() -->
-        <p>
-            <label for="edad">Edad (Numérico): </label>
-            <input type="text" name="edad" id="edad" placeholder="Ej: 22">
+        <p style="margin: 0 0 14px 0;">
+            <label for="edad" style="display: inline-block; min-width: 260px; font-weight: 600; font-size: 14px; color: #334155;">Edad (Numérico): </label>
+            <input type="text" name="edad" id="edad" placeholder="Ej: 22" style="padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit; font-size: 14px; width: 240px; box-sizing: border-box;">
         </p>
 
         <!-- Campo DNI para validar con Expresion Regular /^\d{8}[A-Z]$/-->
-        <p>
-            <label for="dni">DNI (8 numeros y una letra mayúscula): </label>
-            <input type="text" name="dni" id="dni" placeholder="12345678A">
+        <p style="margin: 0 0 14px 0;">
+            <label for="dni" style="display: inline-block; min-width: 260px; font-weight: 600; font-size: 14px; color: #334155;">DNI (8 numeros y una letra mayúscula): </label>
+            <input type="text" name="dni" id="dni" placeholder="12345678A" style="padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit; font-size: 14px; width: 240px; box-sizing: border-box;">
         </p>
 
         <!-- Campo Teléfono para validar con Expresion Regular  /^\d{9}$/-->
-        <p>
-            <label for="telefono">Teléfono (9 cifras): </label>
-            <input type="text" name="telefono" id="telefono" placeholder="600112233">
+        <p style="margin: 0 0 14px 0;">
+            <label for="telefono" style="display: inline-block; min-width: 260px; font-weight: 600; font-size: 14px; color: #334155;">Teléfono (9 cifras): </label>
+            <input type="text" name="telefono" id="telefono" placeholder="600112233" style="padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit; font-size: 14px; width: 240px; box-sizing: border-box;">
         </p>
 
         <!-- Campo Email para validar con Expresion Regular -->
-        <p>
-            <label for="email">Email: </label>
-            <input type="text" name="email" id="email" placeholder="usuario@live.uem.es">
+        <p style="margin: 0 0 14px 0;">
+            <label for="email" style="display: inline-block; min-width: 260px; font-weight: 600; font-size: 14px; color: #334155;">Email: </label>
+            <input type="text" name="email" id="email" placeholder="usuario@live.uem.es" style="padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit; font-size: 14px; width: 240px; box-sizing: border-box;">
         </p>
 
         <!-- Campos de Fecha (Dia, Mes, Año) para validar con new Date() -->
-        <p>
-            <label>Fecha (Dia / Mes 0-11 / Año)</label>
-            <input type="text" id="dia" name="dia" placeholder="Dia (1-31)" size="8px">
-            <input type="text" id="mes" name="mes" placeholder="Mes (0-11)" size="8px">
-            <input type="text" id="anyo" name="anyo" placeholder="Año (2026)" size="8px">
+        <p style="margin: 0 0 14px 0;">
+            <label style="display: inline-block; min-width: 260px; font-weight: 600; font-size: 14px; color: #334155;">Fecha (Dia / Mes 0-11 / Año)</label>
+            <input type="text" id="dia" name="dia" placeholder="Dia (1-31)" size="8px" style="padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit; font-size: 14px; width: 88px; margin-right: 6px; box-sizing: border-box;">
+            <input type="text" id="mes" name="mes" placeholder="Mes (0-11)" size="8px" style="padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit; font-size: 14px; width: 96px; margin-right: 6px; box-sizing: border-box;">
+            <input type="text" id="anyo" name="anyo" placeholder="Año (2026)" size="8px" style="padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit; font-size: 14px; width: 96px; box-sizing: border-box;">
         </p>
 
         <!-- Lista desplegable <select> simple -->
-        <p>
-            <label for="opciones">Selecciona una opcion: </label>
-            <select name="opciones" id="opciones">
+        <p style="margin: 0 0 14px 0;">
+            <label for="opciones" style="display: inline-block; min-width: 260px; font-weight: 600; font-size: 14px; color: #334155;">Selecciona una opcion: </label>
+            <select name="opciones" id="opciones" style="padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit; font-size: 14px; background-color: #f8fafc; color: #0f172a; margin-right: 8px;">
                 <option value="">-- Selecciona un valor --</option>
                 <option value="1">Primer valor</option>
                 <option value="2">Segundo valor</option>
                 <option value="3">Tercer valor</option>
             </select>
             
-            <button type="button" id="btnVerSelect">Ver opcion seleccionada</button>
+            <button type="button" id="btnVerSelect" style="padding: 8px 14px; background-color: #e2e8f0; color: #1e293b; border: none; border-radius: 6px; font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer;">Ver opcion seleccionada</button>
         </p>
-        <p>
-            <select id="cities" name="cities" multiple>
+        <p style="margin: 0 0 18px 0;">
+            <select id="cities" name="cities" multiple style="padding: 6px 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit; font-size: 14px; background-color: #f8fafc; color: #0f172a; min-width: 180px; height: 64px; vertical-align: middle; margin-right: 8px;">
                 <option value="mad">Madrid</option>
                 <option value="bcn">Barcelona</option>
             </select>
-            <button type="button" id="btnVerMultiple">Ver múltiples seleccionadas</button>
+            <button type="button" id="btnVerMultiple" style="padding: 8px 14px; background-color: #e2e8f0; color: #1e293b; border: none; border-radius: 6px; font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer; vertical-align: middle;">Ver múltiples seleccionadas</button>
         </p>
 
         <!-- Grupo de RadioButtons -->
-        <div>
-            <input type="radio" name="lenguaje" id="javascript" value="JavaScript">
-            <label for="javascript">JavaScript</label>
+        <div style="margin-bottom: 6px; display: flex; align-items: center; gap: 8px;">
+            <input type="radio" name="lenguaje" id="javascript" value="JavaScript" style="accent-color: #2563eb; width: 16px; height: 16px; cursor: pointer;">
+            <label for="javascript" style="font-size: 14px; color: #334155; cursor: pointer;">JavaScript</label>
         </div>
-        <div>
-            <input type="radio" name="lenguaje" id="python" value="Python">
-            <label for="python">Python</label>
+        <div style="margin-bottom: 6px; display: flex; align-items: center; gap: 8px;">
+            <input type="radio" name="lenguaje" id="python" value="Python" style="accent-color: #2563eb; width: 16px; height: 16px; cursor: pointer;">
+            <label for="python" style="font-size: 14px; color: #334155; cursor: pointer;">Python</label>
         </div>
-        <div>
-            <input type="radio" name="lenguaje" id="java" value="Java">
-            <label for="java">Java</label>
+        <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+            <input type="radio" name="lenguaje" id="java" value="Java" style="accent-color: #2563eb; width: 16px; height: 16px; cursor: pointer;">
+            <label for="java" style="font-size: 14px; color: #334155; cursor: pointer;">Java</label>
         </div>
-        <button type="button" id="btnVerRadio">Mostrar Lenguaje Seleccionado</button>
-        <p id="outputRadio"></p>
+        <button type="button" id="btnVerRadio" style="padding: 8px 14px; background-color: #e2e8f0; color: #1e293b; border: none; border-radius: 6px; font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer;">Mostrar Lenguaje Seleccionado</button>
+        <p id="outputRadio" style="margin: 8px 0 18px 0; font-size: 14px; font-weight: 600; color: #2563eb; min-height: 20px;"></p>
 
         <!-- Checkboxes y botones para marcar/desmarcar todos -->
-        <p>Condiciones (Checkbox obligatorio)</p>
-        <label for="agree">
-            <input type="checkbox" name="agree" id="agree">Acepto los terminos y condiciones.
+        <p style="margin: 0 0 8px 0; font-weight: 600; font-size: 14px; color: #334155;">Condiciones (Checkbox obligatorio)</p>
+        <label for="agree" style="display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: #334155; margin-bottom: 6px; cursor: pointer;">
+            <input type="checkbox" name="agree" id="agree" style="accent-color: #2563eb; width: 16px; height: 16px; cursor: pointer;">Acepto los terminos y condiciones.
         </label><br>
-        <label for="newsletter">
-            <input type="checkbox" name="newsletter" id="newsletter">Deseo recibir noticias.
+        <label for="newsletter" style="display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: #334155; margin-bottom: 10px; cursor: pointer;">
+            <input type="checkbox" name="newsletter" id="newsletter" style="accent-color: #2563eb; width: 16px; height: 16px; cursor: pointer;">Deseo recibir noticias.
         </label><br>
-        <button type="button" id="btnMarcarTodos">Seleccionar todos los CheckBox</button>
-        <button type="button" id="btnDesmarcarTodos">Deseleccionar todos los Checkbox</button>
+        <button type="button" id="btnMarcarTodos" style="padding: 8px 14px; background-color: #e2e8f0; color: #1e293b; border: none; border-radius: 6px; font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer; margin-right: 6px; margin-bottom: 16px;">Seleccionar todos los CheckBox</button>
+        <button type="button" id="btnDesmarcarTodos" style="padding: 8px 14px; background-color: #e2e8f0; color: #1e293b; border: none; border-radius: 6px; font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer; margin-bottom: 16px;">Deseleccionar todos los Checkbox</button>
 
         <!-- Textarea ocn limite de caracteres mediante onkeypress -->
-        <p>
-            <label for="texto">Comentarios (Máximo 20 caracteres): </label><br>
-            <textarea id="texto" onkeypress="return limita(20)"></textarea>
+        <p style="margin: 0 0 20px 0;">
+            <label for="texto" style="font-weight: 600; font-size: 14px; color: #334155;">Comentarios (Máximo 20 caracteres): </label><br>
+            <textarea id="texto" onkeypress="return limita(20)" style="width: 100%; max-width: 440px; height: 84px; padding: 10px 12px; margin-top: 6px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit; font-size: 14px; resize: vertical; box-sizing: border-box;"></textarea>
         </p>
 
         <!-- Boton de envio normal (dispara onsubmit="return valicacion()") -->
-        <input type="submit" value="Validar y Enviar Formulario">
+        <input type="submit" value="Validar y Enviar Formulario" style="padding: 10px 18px; background-color: #2563eb; color: #ffffff; border: none; border-radius: 6px; font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer; margin-right: 8px; margin-top: 4px;">
 
         <!-- Boton de reinicio (dispara el evento reset) -->
-        <input type="reset" value="Limpiar formulario">
+        <input type="reset" value="Limpiar formulario" style="padding: 10px 18px; background-color: #64748b; color: #ffffff; border: none; border-radius: 6px; font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer; margin-right: 8px; margin-top: 4px;">
 
         <!-- 
         Utilidad para evitar envio duplicado:
@@ -169,30 +169,31 @@
                 this.disabled=true; 
                 this.value='Enviando...';
                 this.form.submit();"
+            style="padding: 10px 18px; background-color: #0d9488; color: #ffffff; border: none; border-radius: 6px; font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer; margin-top: 4px;"
         >
     </form>
 
-    <hr>
+    <hr style="border: none; border-top: 1px solid #cbd5e1; margin: 28px 0;">
 
     <!-- 
     -------------------------------------------
-    SECCION4: JSON, AJAX Y WEB STORAGE (UF4.1)
+    SECCION 4: JSON, AJAX Y WEB STORAGE (UF4.1)
     -------------------------------------------
     -->
 
-    <h2>4. JSON, AJAX (XHR y Fetch) y Storage (UF4.1)</h2>
+    <h2 style="font-size: 20px; font-weight: 600; color: #1e293b; margin: 0 0 14px 0;">4. JSON, AJAX (XHR y Fetch) y Storage (UF4.1)</h2>
 
-    <button type="button" id="btnProbarJSON">1. Probar JSON.parse() y JSON.stringfy()</button><br>
-    <button type="button" id="btnXHR">2. Peticion AJAX con CMLHttpRequest</button><br>
-    <button type="button" id="btnFetchGet">3. Peticion AJAX con Fetch (GET)</button><br>
-    <button type="button" id="btnFetchPost">4. Enviar datos con Fetch (POST)</button><br>
-    <button type="button" id="btnGuardarStorage">5. Guardar en LocalStorage y SessionStorage</button><br>
-    <button type="button" id="btnLeerStorage">6. Leer de LocarStorage</button><br>
-    <button type="button" id="btnBorrarStorage">7. Vaciar LocaStorage</button><br>
+    <button type="button" id="btnProbarJSON" style="width: 100%; max-width: 380px; text-align: left; padding: 10px 16px; margin-bottom: 8px; background-color: #ffffff; color: #1e293b; border: 1px solid #cbd5e1; border-radius: 8px; font-family: inherit; font-size: 14px; font-weight: 500; cursor: pointer; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);">1. Probar JSON.parse() y JSON.stringfy()</button><br>
+    <button type="button" id="btnXHR" style="width: 100%; max-width: 380px; text-align: left; padding: 10px 16px; margin-bottom: 8px; background-color: #ffffff; color: #1e293b; border: 1px solid #cbd5e1; border-radius: 8px; font-family: inherit; font-size: 14px; font-weight: 500; cursor: pointer; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);">2. Peticion AJAX con CMLHttpRequest</button><br>
+    <button type="button" id="btnFetchGet" style="width: 100%; max-width: 380px; text-align: left; padding: 10px 16px; margin-bottom: 8px; background-color: #ffffff; color: #1e293b; border: 1px solid #cbd5e1; border-radius: 8px; font-family: inherit; font-size: 14px; font-weight: 500; cursor: pointer; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);">3. Peticion AJAX con Fetch (GET)</button><br>
+    <button type="button" id="btnFetchPost" style="width: 100%; max-width: 380px; text-align: left; padding: 10px 16px; margin-bottom: 8px; background-color: #ffffff; color: #1e293b; border: 1px solid #cbd5e1; border-radius: 8px; font-family: inherit; font-size: 14px; font-weight: 500; cursor: pointer; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);">4. Enviar datos con Fetch (POST)</button><br>
+    <button type="button" id="btnGuardarStorage" style="width: 100%; max-width: 380px; text-align: left; padding: 10px 16px; margin-bottom: 8px; background-color: #ffffff; color: #1e293b; border: 1px solid #cbd5e1; border-radius: 8px; font-family: inherit; font-size: 14px; font-weight: 500; cursor: pointer; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);">5. Guardar en LocalStorage y SessionStorage</button><br>
+    <button type="button" id="btnLeerStorage" style="width: 100%; max-width: 380px; text-align: left; padding: 10px 16px; margin-bottom: 8px; background-color: #ffffff; color: #1e293b; border: 1px solid #cbd5e1; border-radius: 8px; font-family: inherit; font-size: 14px; font-weight: 500; cursor: pointer; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);">6. Leer de LocarStorage</button><br>
+    <button type="button" id="btnBorrarStorage" style="width: 100%; max-width: 380px; text-align: left; padding: 10px 16px; margin-bottom: 8px; background-color: #ffffff; color: #1e293b; border: 1px solid #cbd5e1; border-radius: 8px; font-family: inherit; font-size: 14px; font-weight: 500; cursor: pointer; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);">7. Vaciar LocaStorage</button><br>
 
-    <hr>
+    <hr style="border: none; border-top: 1px solid #cbd5e1; margin: 28px 0;">
 
-    <div id="resultadoAJAX" style = "background-color: lightgrey; padding: 0px; margin: 0px;">
+    <div id="resultadoAJAX" style="background-color: #1e293b; color: #f8fafc; padding: 16px 20px; margin: 0; border-radius: 8px; border-left: 4px solid #3b82f6; font-family: Consolas, 'Courier New', monospace; font-size: 14px; line-height: 1.5; min-height: 56px; white-space: pre-wrap; box-shadow: 0 2px 6px rgba(15, 23, 42, 0.12);">
         Aqui se mostraran los resultados de JSON, AJAX y LocalStorage...
     </div>
 
