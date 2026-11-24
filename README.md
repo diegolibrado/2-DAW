@@ -5,8 +5,8 @@ Repositorio donde subo todos mis apuntes, ejercicios y prácticas de **JavaScrip
 ---
 
 ## 🌐 JavaScript
-- **[JavaScript - Examen 1 (Ejecutar web en GitHub Pages)](https://diegolibrado.github.io/2-DAW/JavaScript/Examen%201/)**
-  - 📄 [`index.html`](https://github.com/diegolibrado/2-DAW/blob/main/JavaScript/Examen%201/index.html)
+- **JavaScript - Examen 1**
+  - 📄 [`index.html` (código)](https://github.com/diegolibrado/2-DAW/blob/main/JavaScript/Examen%201/index.html) | 🌐 [`index.html` (web)](https://diegolibrado.github.io/2-DAW/JavaScript/Examen%201/index.html)
   - 📜 [`01_eventos.js`](https://github.com/diegolibrado/2-DAW/blob/main/JavaScript/Examen%201/01_eventos.js)
   - 📜 [`02_formularios.js`](https://github.com/diegolibrado/2-DAW/blob/main/JavaScript/Examen%201/02_formularios.js)
   - 📜 [`03_validaciones.js`](https://github.com/diegolibrado/2-DAW/blob/main/JavaScript/Examen%201/03_validaciones.js)
@@ -26,8 +26,8 @@ Repositorio donde subo todos mis apuntes, ejercicios y prácticas de **JavaScrip
 
 ### Sistema de Usuarios (Login, Registro y Sesiones)
 - [`crear_tabla_usuarios.sql`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/crear_tabla_usuarios.sql)
-- [`login.html`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/login.html) | [`login.php`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/login.php)
-- [`registro.html`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/registro.html) | [`registro.php`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/registro.php)
+- [`login.html` (código)](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/login.html) · [`login.html` (web)](https://diegolibrado.github.io/2-DAW/PHP/CURSO_PHP/usuarios/login.html) | [`login.php`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/login.php)
+- [`registro.html` (código)](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/registro.html) · [`registro.html` (web)](https://diegolibrado.github.io/2-DAW/PHP/CURSO_PHP/usuarios/registro.html) | [`registro.php`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/registro.php)
 - [`panel.php`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/panel.php)
 - [`logout.php`](https://github.com/diegolibrado/2-DAW/blob/main/PHP/CURSO_PHP/usuarios/logout.php)
 
